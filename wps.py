@@ -6,9 +6,6 @@ import os
 import je_open_cv
 
 
-#bruk cmd og installer pip, installer packages sånn: pip install "je_open_cv" - pip install "pillow"
-#time.sleep(3)
-
 h = None
 while h is None:
     h = pg.locateCenterOnScreen('D:/wps/winamp.png', confidence=0.9)
@@ -36,3 +33,4 @@ print(s)
 shutil.copy((s), 'D:\Musikk\python copy script')
 
 pg.click((h), clicks=1, interval=1, button='left') 
+
